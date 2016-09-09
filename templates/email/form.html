@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://demo.shnayder.pro/works/shader/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Email Form Creator</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- Favicon -->
+        <link href="http://demo.shnayder.pro/works/shader/img/favicon.ico" rel="shortcut icon">
+
+        <!-- Custom fonts -->
+         <link href="{{ url_for('static', filename='./EmailHome_files/css')}}" rel="stylesheet">
+ <link href="{{ url_for('static', filename='./EmailHome_files/social-font.css')}}" rel="stylesheet">
+          <link href="{{ url_for('static', filename='./EmailHome_files/bootstrap.min.css')}}" rel="stylesheet">
+           <link href="{{ url_for('static', filename='./EmailHome_files/shader.css')}}" rel="stylesheet">
+            <link href="{{ url_for('static', filename='./EmailHome_files/demo.css')}}" rel="stylesheet">
+             
+
+
+    </head>
+
+       <body class="theme-fire">
+    <h1 class="header">Email Form Creator</h1><br/><br/><br/><br/>
+        <!-- Background container -->
+        <div id="background-container" class="background-container" style="width:100%;height:100%">
+            <div id="background-output" class="background-output"><canvas width="100%" height="100%" style="display: block;"></canvas></div>
+            <div id="vignette" class="background-vignette"></div>
+            <div id="noise" class="background-noise"></div>
+        </div>
+        <!-- /Background container -->
+
+        <!-- Main content -->
+        <div class="content">
+        
+
+            <!-- Countdown -->
+            <div class="countdown" id="countdown">
+            <center><h1>Here is your Form!</h1></center>
+                <div class="container"><span style="color: black">
+                   <textarea rows="15" cols="100">{{email}}</textarea> </span>
+                </div>
+            </div>
+            <!-- /Countdown -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="form-and-links-container col-sm-8 col-sm-offset-2">
+                        <!-- Subscription form -->
+                        <div class="row">
+                            <form class="subscription-form" id="subscription-form" novalidate>
+                                <div class="input-group col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">
+                                    <input type="email" class="subscription-form-email form-control" id="subscription-form-email" name="email" placeholder="Enter email for from...">
+                                    <span class="input-group-btn">
+                                        <button class="subscription-form-submit btn" id="subscription-form-submit">Make Form</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /Subscription form -->
+
+                    
+                        <!-- /Social links -->
+                    </div>
+
+                </div>
+                <center><p>Email Form Creator uses <a href="http://demo.shnayder.pro/works/shader/index.html">Shader</a></p></center>
+            </div>
+        </div>
+        <!-- /Main content -->
+
+        <!-- Demo panel -->
+       
+        <!-- /Demo panel -->
+
+       <script src="{{ url_for('static', filename='./EmailHome_files/jquery-1.11.1.min.js')}}"></script>  
+<script src="{{ url_for('static', filename='./EmailHome_files/jquery.countdown.js')}}"></script>  
+<script src="{{ url_for('static', filename='./EmailHome_files/placeholders.min.js')}}"></script>  
+<script src="{{ url_for('static', filename='./EmailHome_files/flat-surface-shader.js')}}"></script>  
+<script src="{{ url_for('static', filename='./EmailHome_files/main.config.js')}}"></script>  
+<script src="{{ url_for('static', filename='./EmailHome_files/shader.js')}}"></script>  
+<script src="{{ url_for('static', filename='./EmailHome_files/demo.js')}}"></script>  
+    </body>
+
+</html>
