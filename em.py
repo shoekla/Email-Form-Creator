@@ -14,22 +14,6 @@ def getForm(email):
             </form>
             """
 	return email
-"""
-a = int(raw_input("Enter side a: "))
-b = int(raw_input("Enter side b: "))
-angle = float(raw_input("Enter angle: "))
-
-c = (((a ** 2)+(b ** 2)-(2*a*b*math.cos(angle))) ** (.5))
-print "C: "+str(c)
-"""
-numRows = int(raw_input("Enter number of rows: "))
-lastRow = numRows +numRows -1
-numStars = 1
-half = (lastRow - 1)/2
-for i in range(0,numRows):
-	print( (half) * ' ' + numStars * '*' + (half) * ' ')
-	numStars +=2
-	half -=1
 
 
 
