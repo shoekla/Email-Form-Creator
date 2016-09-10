@@ -1,4 +1,5 @@
 import math
+#This is part of the python, the rest is on my pythonanywhere server
 def getForm(email):
 	email = """ <form action="http://abirshukla.pythonanywhere.com/emailUser/" method="POST">
              <!-- Your Email -->
