@@ -7,14 +7,11 @@ import os
 import em
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/emailFormCreator/')
 def goToLogin():
 	return render_template("email/EmailHome.html")
-@app.route('/test/')
-def goTtest():
-	return render_template("email/test.html")
 
-@app.route('/email/',methods=['POST'])
+@app.route('/emailFormCreator/email/',methods=['POST'])
 def emailFormMake(email = None):
 	print "Email Method--------"
 	email = None
