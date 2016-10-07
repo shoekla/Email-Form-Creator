@@ -18,6 +18,8 @@ def emailFormMake(email = None):
 	email = request.form['email']
 	email = em.getForm(email)
 	return render_template("email/form.html",email = email)
-
+@app.route('/test/')
+def em():
+	return render_template("email/test.html")
 if __name__ == '__main__':
     app.run()
